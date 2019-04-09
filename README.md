@@ -1,2 +1,2 @@
 # intentServiceDemo
-android intentService demo
+android intentService demo including startService and bindService.

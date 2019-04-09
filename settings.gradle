@@ -1,1 +1,1 @@
-include ':startServiceDemo',':bindServiceDemo'
+include ':startServiceDemo'

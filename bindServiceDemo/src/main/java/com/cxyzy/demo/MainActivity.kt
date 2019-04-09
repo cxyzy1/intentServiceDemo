@@ -11,7 +11,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private val tag = MainActivity::class.java.simpleName
-
     private lateinit var service: SampleIntentService
     private var isBound = false
 
@@ -24,14 +23,14 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun initListeners() {
-        bindTv.setOnClickListener {
+        bindBtn.setOnClickListener {
             val intent = Intent(this, SampleIntentService::class.java)
-            bindService(intent, conn, BIND_AUTO_CREATE)
+            bindService(intent, serviceConnection, BIND_AUTO_CREATE)
         }
-        unBindTv.setOnClickListener { unbindService(conn) }
+        unBindBtn.setOnClickListener { unbindService(serviceConnection) }
     }
 
-    private val conn = object : ServiceConnection {
+    private val serviceConnection = object : ServiceConnection {
         override fun onServiceConnected(name: ComponentName, binder: IBinder) {
             log(tag, "onServiceConnected")
             isBound = true

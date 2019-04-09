@@ -18,7 +18,7 @@ class SampleIntentService : IntentService("download_worker_thread") {
 
     private val binder = MyBinder()
     override fun onHandleIntent(intent: Intent?) {
-        log(tag, "onNewIntent")
+        log(tag, "onHandleIntent")
     }
 
     private fun doSomething() {

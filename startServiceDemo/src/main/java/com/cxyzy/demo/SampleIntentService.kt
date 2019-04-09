@@ -6,7 +6,7 @@ import android.content.Intent
 class SampleIntentService : IntentService("worker_thread") {
     private val tag = SampleIntentService::class.java.simpleName
     override fun onHandleIntent(intent: Intent?) {
-        log(tag, "onNewIntent")
+        log(tag, "onHandleIntent")
         doSomething()
     }
 

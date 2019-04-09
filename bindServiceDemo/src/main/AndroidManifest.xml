@@ -4,7 +4,6 @@
     package="com.cxyzy.demo">
 
     <application
-        android:name=".App"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".DownloadIntentService" />
+        <service android:name=".SampleIntentService" />
     </application>
 
 </manifest>

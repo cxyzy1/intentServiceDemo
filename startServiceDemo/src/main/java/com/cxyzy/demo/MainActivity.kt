@@ -13,5 +13,4 @@ class MainActivity : AppCompatActivity() {
         startService(Intent(this, SampleIntentService::class.java))
     }
 
-
 }

@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         initListeners()
     }
 
-
     private fun initListeners() {
         bindBtn.setOnClickListener {
             val intent = Intent(this, SampleIntentService::class.java)

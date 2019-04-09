@@ -34,5 +34,4 @@ class DownloadIntentService : IntentService("download_worker_thread") {
     private fun log(message: String) {
         Log.d(tag, "$message ${Thread.currentThread().name}")
     }
-
 }
